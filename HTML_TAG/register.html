@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>회원가입</h1>
+
+    <form action="">
+        <fieldset style="width: 30%; height: auto;">
+            <legend>로그인 정보</legend>
+            <div>
+                <label for="">아이디</label>
+                <input type="text" name="id" autofocus required>
+            </div>
+            <div>
+                <label for="">비밀번호</label>
+                <input type="password" id="pw" required>
+            </div>
+        </fieldset>
+        <fieldset style="width: 30%; height: auto;">
+            <legend>개인 정보</legend>
+            <div>
+                <label for="">이름 </label>
+                <input type="text">
+            </div>
+            <div>
+                <label for="">성별</label>
+                <input type="radio" name="gender">남
+                <input type="radio" name="gender">여
+            </div>
+            <div>
+                <label for="">주소</label>
+                <select id="address">
+                    <optgroup label="선산읍">
+                        <option>완전리</option>
+                        <option>동부리</option>
+                        <option>노상리</option>
+                    </optgroup>
+                    <optgroup label="고아읍">
+                        <option>관심리</option>
+                        <option>이례리</option>
+                        <option>오로리</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div>
+                <label for="email">메일주소</label>
+                <input type="email">
+            </div>
+            <p></p>
+            <div>
+                <label for="tel">전화번호</label>
+                <input type="tel">
+            </div>
+            <fieldset style="width: 300px; height: auto;">
+                <legend>관심분야</legend>
+                <label><input type="checkbox" name="interest" value="">주방제품</label>
+                <label><input type="checkbox" name="interest" value="">가전제품</label>
+                <label><input type="checkbox" name="interest" value="">패션</label>
+                <p></p>
+                <label><input type="checkbox" name="interest" value="">유아제품</label>
+                <label><input type="checkbox" name="interest" value="">스포츠용품</label>
+                <label><input type="checkbox" name="interest" value="">도서</label>
+            </fieldset>
+        </fieldset>
+        <input type="submit" value="회원가입">
+        <input type="reset" value="입력취소">
+    </form>
+</body>
+
+</html>
